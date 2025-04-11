@@ -48,7 +48,7 @@ The binary masks clearly show the distribution of each class in the image, provi
 
 Below is an example of a street scene image from the dataset along with its corresponding segmentation mask:
 
-![Sample Dataset Visualization](Q1-FCN/figures/dataset-fcn-sample.png)
+![Sample Dataset Visualization](figures/dataset-fcn-sample.png)
 
 ## FCN Architecture
 
@@ -84,7 +84,7 @@ The key insight of the FCN architecture is combining semantic information from a
 
 As seen in our experiments, FCN-8s benefits the most from this multi-scale feature fusion, as it incorporates the most shallow, spatially-precise features from pool3.
 
-![Architecture Diagram](Q1-FCN/figures/FCNs.jpg)
+![Architecture Diagram](figures/FCNs.jpg)
 
 ## Implementation Details
 
@@ -225,48 +225,48 @@ The training pipeline includes several key components:
 
 #### FCN-32s (Frozen Backbone)
 - **Learning Curve:**  
-  ![FCN32 Frozen Learning Curve](Q1-FCN/figures/results_FCN32_frozen_20250409_034328_5epoch/FCN32_frozen_learning_curves.png)
+  ![FCN32 Frozen Learning Curve](figures/results_FCN32_frozen_20250409_034328_5epoch/FCN32_frozen_learning_curves.png)
 - **Per-Class IoU:**  
-  ![FCN32 Frozen Class IoUs](Q1-FCN/figures/results_FCN32_frozen_20250409_034328_5epoch/FCN32_frozen_class_ious.png)
+  ![FCN32 Frozen Class IoUs](figures/results_FCN32_frozen_20250409_034328_5epoch/FCN32_frozen_class_ious.png)
 
 ---
 
 #### FCN-32s (Fine-tuned Backbone)
 - **Learning Curve:**  
-  ![FCN32 Fine-tuned Learning Curve](Q1-FCN/figures/results_FCN32_finetuned_20250409_040052_epoch/FCN32_finetuned_learning_curves.png)
+  ![FCN32 Fine-tuned Learning Curve](figures/results_FCN32_finetuned_20250409_040052_epoch/FCN32_finetuned_learning_curves.png)
 - **Per-Class IoU:**  
-  ![FCN32 Fine-tuned Class IoUs](Q1-FCN/figures/results_FCN32_finetuned_20250409_040052_epoch/FCN32_finetuned_class_ious.png)
+  ![FCN32 Fine-tuned Class IoUs](figures/results_FCN32_finetuned_20250409_040052_epoch/FCN32_finetuned_class_ious.png)
 
 ---
 #### FCN-16s (Frozen Backbone)
 - **Learning Curve:**  
-  ![FCN16 Frozen Learning Curve](Q1-FCN/figures/results_FCN16_frozen_20250409_061308/FCN16_frozen_learning_curves.png)
+  ![FCN16 Frozen Learning Curve](figures/results_FCN16_frozen_20250409_061308/FCN16_frozen_learning_curves.png)
 - **Per-Class IoU:**  
-  ![FCN16 Frozen Class IoUs](Q1-FCN/figures/results_FCN16_frozen_20250409_061308/FCN16_frozen_class_ious.png)
+  ![FCN16 Frozen Class IoUs](figures/results_FCN16_frozen_20250409_061308/FCN16_frozen_class_ious.png)
 
 ---
 
 #### FCN-16s (Fine-tuned Backbone)
 - **Learning Curve:**  
-  ![FCN16 Fine-tuned Learning Curve](Q1-FCN/figures/results_FCN16_finetuned_10epochs/FCN16_finetuned_learning_curves.png)
+  ![FCN16 Fine-tuned Learning Curve](figures/results_FCN16_finetuned_10epochs/FCN16_finetuned_learning_curves.png)
 - **Per-Class IoU:**  
-  ![FCN16 Fine-tuned Class IoUs](Q1-FCN/figures/results_FCN16_finetuned_10epochs/FCN16_finetuned_class_ious.png)
+  ![FCN16 Fine-tuned Class IoUs](figures/results_FCN16_finetuned_10epochs/FCN16_finetuned_class_ious.png)
 
 ---
 
 #### FCN-8s (Frozen Backbone)
 - **Learning Curve:**  
-  ![FCN8 Frozen Learning Curve](Q1-FCN/figures/results_FCN8_frozen/FCN8_frozen_learning_curves.png)
+  ![FCN8 Frozen Learning Curve](figures/results_FCN8_frozen/FCN8_frozen_learning_curves.png)
 - **Per-Class IoU:**  
-  ![FCN8 Frozen Class IoUs](Q1-FCN/figures/results_FCN8_frozen/FCN8_frozen_class_ious.png)
+  ![FCN8 Frozen Class IoUs](figures/results_FCN8_frozen/FCN8_frozen_class_ious.png)
 
 ---
 
 #### FCN-8s (Fine-tuned Backbone)
 - **Learning Curve:**  
-  ![FCN8 Fine-tuned Learning Curve](Q1-FCN/figures/results_FCN8_finetuned/FCN8_finetuned_learning_curves.png)
+  ![FCN8 Fine-tuned Learning Curve](figures/results_FCN8_finetuned/FCN8_finetuned_learning_curves.png)
 - **Per-Class IoU:**  
-  ![FCN8 Fine-tuned Class IoUs](Q1-FCN/figures/results_FCN8_finetuned/FCN8_finetuned_class_ious.png)
+  ![FCN8 Fine-tuned Class IoUs](figures/results_FCN8_finetuned/FCN8_finetuned_class_ious.png)
 
 ---
 
