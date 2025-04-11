@@ -1,0 +1,60 @@
+Training FCN32_finetuned
+Epoch 1/5 - Train Loss: 0.5049, mIoU: 0.6693 | Val Loss: 0.3490, mIoU: 0.7114 | LR: 0.000010 | Avg Batch Time: 0.228s
+Per-class IoU:
+  Unlabeled: 0.8372
+  Building: 0.7220
+  Fence: 0.2234
+  Other: 0.1758
+  Pedestrian: 0.0000
+  Pole: 0.0136
+  Roadline: 0.0037
+  Road: 0.8795
+  Sidewalk: 0.7216
+  Vegetation: 0.5615
+  Car: 0.9272
+  Wall: 0.2869
+  Traffic sign: 0.0324
+Saved new best model with val_iou: 0.7114
+Epoch 2/5 - Train Loss: 0.3374, mIoU: 0.7394 | Val Loss: 0.3138, mIoU: 0.7390 | LR: 0.000010 | Avg Batch Time: 0.233s
+Saved new best model with val_iou: 0.7390
+Epoch 3/5 - Train Loss: 0.3073, mIoU: 0.7567 | Val Loss: 0.3082, mIoU: 0.7398 | LR: 0.000010 | Avg Batch Time: 0.232s
+Saved new best model with val_iou: 0.7398
+Epoch 4/5 - Train Loss: 0.2957, mIoU: 0.7619 | Val Loss: 0.3015, mIoU: 0.7458 | LR: 0.000010 | Avg Batch Time: 0.232s
+Saved new best model with val_iou: 0.7458
+Epoch 5/5 - Train Loss: 0.2871, mIoU: 0.7662 | Val Loss: 0.3042, mIoU: 0.7232 | LR: 0.000010 | Avg Batch Time: 0.231s
+Per-class IoU:
+  Unlabeled: 0.8429
+  Building: 0.7514
+  Fence: 0.1314
+  Other: 0.2682
+  Pedestrian: 0.0000
+  Pole: 0.0372
+  Roadline: 0.0584
+  Road: 0.8950
+  Sidewalk: 0.7561
+  Vegetation: 0.5689
+  Car: 0.9400
+  Wall: 0.4172
+  Traffic sign: 0.1067
+Training completed. Best validation mIoU: 0.7458 at epoch 4
+Testing FCN32_finetuned: 100%
+ 32/32 [00:07<00:00,  4.15it/s]
+
+Test Results for FCN32_finetuned:
+Test Loss: 0.3104
+Test Mean IoU: 0.7318
+
+Per-class IoU:
+  Unlabeled: 0.8351
+  Building: 0.7615
+  Fence: 0.1311
+  Other: 0.2504
+  Pedestrian: 0.0000
+  Pole: 0.0326
+  Roadline: 0.0570
+  Road: 0.8928
+  Sidewalk: 0.7492
+  Vegetation: 0.5777
+  Car: 0.9370
+  Wall: 0.4179
+  Traffic sign: 0.0597
